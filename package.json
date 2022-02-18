@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Site de réservation de menu",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomualdP/P3_OC_ohmyfood.git"
+  },
+  "author": "Romuald Piquet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomualdP/P3_OC_ohmyfood/issues"
+  },
+  "homepage": "https://github.com/RomualdP/P3_OC_ohmyfood#readme"
+}
