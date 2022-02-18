@@ -1,17 +1,17 @@
 /* Vendors*/
+/* Base */
+@import "./base/base";
+@import "./base/typography";
 
 /* Utils */
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./utils/functions";
 
-/* Base */
-@import "./base/base";
-@import "./base/typography";
-
 /* Layout */
 @import "./Layout/header";
 @import "./Layout/footer";
+@import "./Layout/restaurant-prev";
 
 /* pages */
 @import "./pages/intro";

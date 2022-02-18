@@ -1,9 +1,182 @@
 /* Vendors*/
-/* Utils */
 /* Base */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700;900&family=Roboto:wght@100;400;700;900&family=Shrikhand&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Font family */
+/* Utils */
 /* Layout */
+header {
+  background-color: white;
+  font-family: "Shrikhand", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px #A1A1A1;
+  height: 4rem;
+}
+
+footer {
+  background-color: #353535;
+  padding: 20px;
+  color: white;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+footer li {
+  margin: 10px 0;
+}
+footer h2 {
+  font-family: "Shrikhand", cursive;
+}
+
+.restorant-preview {
+  background-color: #F6F6F6;
+  padding: 20px;
+}
+.restorant-previewCard {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 5px 10px #ACACAC;
+  margin: 1rem;
+}
+.restorant-previewCard__description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem;
+}
+.restorant-previewCard__description i {
+  margin: 1rem;
+  font-size: 2rem;
+}
+.restorant-previewCard__description h3 {
+  margin: 0;
+}
+.restorant-previewCard__description p {
+  margin: 0;
+}
+.restorant-previewCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+.restorant-previewCard__newTag {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #99E2D0;
+  font-weight: 700;
+  color: #2c9c81;
+  padding: 10px;
+  margin: 0;
+}
+
 /* pages */
+.location {
+  background-color: #EAEAEA;
+  color: #353535;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+}
+.location h3 {
+  margin: 0 1rem;
+}
+
+.intro {
+  background-color: #F6F6F6;
+  text-align: center;
+  padding: 40px;
+}
+.intro h2 {
+  padding: 0 1rem;
+  margin: 0;
+}
+.intro p {
+  color: #353535;
+}
+
+.explanation {
+  padding: 20px;
+}
+.explanationSteps {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 5px 10px #ACACAC;
+  margin: 2rem 0;
+}
+.explanationSteps__number {
+  position: relative;
+  left: -20px;
+  height: 24px;
+  width: 24px;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.explanationSteps:hover {
+  background-color: #f2eafb;
+}
+.explanationSteps i {
+  position: relative;
+  left: -20px;
+  color: #666;
+  margin: 1rem;
+}
+.explanationSteps p {
+  font-weight: 700;
+  position: relative;
+  left: -20px;
+}
+
 /* Components*/
+.btnGradient {
+  background: linear-gradient(170deg, #FF79DA 0%, #9356DC 100%);
+  color: white;
+  font-weight: 700;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 0;
+  margin: 0.5rem;
+  box-shadow: 0 5px 10px #ACACAC;
+}
+
 /* Themes */
 
 /*# sourceMappingURL=style.css.map */

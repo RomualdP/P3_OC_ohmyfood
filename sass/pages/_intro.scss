@@ -1,0 +1,24 @@
+.location {
+    background-color: #EAEAEA;
+    color: #353535;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    & h3 {
+        margin: 0 1rem;
+    }
+}
+
+.intro {
+    background-color: #F6F6F6;
+    text-align: center;
+    padding: 40px;
+    & h2 {
+        padding: 0 1rem;
+        margin: 0;
+    }
+    & p {
+        color: #353535;
+    }
+}

@@ -1,0 +1,43 @@
+.explanation {
+    padding : 20px;
+    &Steps {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        background-color: #F6F6F6 ;
+        border-radius: 20px;
+        padding: 10px;
+        box-shadow:  0 5px 10px #ACACAC;
+        margin: 2rem 0;
+        &__number {
+            position: relative;
+            left:-20px;
+            height: 24px;
+            width: 24px;
+            background-color: $color-primary;
+            color: white;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &:hover {
+            background-color: lighten($color-primary, 35%);
+        }
+        & i {
+            position: relative;
+            left: -20px;
+            color: #666;
+            margin: 1rem;
+        }
+        & p {
+            font-weight: 700;
+            position: relative;
+            left: -20px;
+        }
+    }
+    
+    
+}
