@@ -1,0 +1,37 @@
+.restorantImg {
+    width: 100%;
+    & img {
+        width: 100%;
+    }
+}
+.menu {
+    position: relative;
+    top: -80px;
+    z-index: 10;
+    background-color: #F6F6F6;
+    border-radius: 2rem;
+    padding:1rem;
+    & h1 {
+        font-family: "Shrikhand", cursive;
+        font-size: 1.8rem;
+    }
+    &__title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        & i {
+            font-size: 1.8rem;
+            margin: .5rem;
+        }
+    }
+    &__heading {
+        text-transform: uppercase;
+        margin: .5rem 0;
+        &Underline {
+            height: 3px;
+            width: 40px;
+            background-color: $color-tertiary;
+        }
+    }
+}
