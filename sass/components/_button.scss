@@ -5,6 +5,11 @@
     padding: 1rem;
     border-radius: 2rem;
     border: 0;
-    margin: .5rem;
+    margin: auto;
     box-shadow: 0 5px 10px #ACACAC;
+    font-family: "Roboto", sans-serif;
+}
+.btnWrap {
+    display: flex;
+    justify-content: center;
 }

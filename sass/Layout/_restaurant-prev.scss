@@ -16,10 +16,7 @@
             justify-content: space-between;
             align-items: center;
             margin: 0 1rem;
-            & i {
-                margin: 1rem;
-                font-size: 2rem;
-            }
+            
             & h3 {
                 margin: 0 ;
             }
@@ -52,5 +49,32 @@
             margin: 0;
             box-shadow: 0 0 5px #666;
         }
+    }
+}
+
+.likeIcon {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    & .far:hover{
+        opacity: 0;
+    }
+
+}
+
+.iconFilled {
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: .3s;
+    margin: 0;
+    &:hover {
+        opacity: 1;
+        background: $gradient;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color:transparent;
+
     }
 }
