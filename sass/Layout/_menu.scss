@@ -34,7 +34,7 @@
             background-color: $color-tertiary;
         }
     }
-    &__card {
+    &__card { 
         display: flex;
         justify-content: space-between;
         background-color: white;
@@ -100,4 +100,53 @@
     }
     
    
+}
+/** Menu animations **/
+.menu__load {
+    &1 {
+        animation: menuLoad 800ms;
+        animation-fill-mode: both;
+    }
+    &2 {
+        animation: menuLoad 800ms 400ms;
+        animation-fill-mode: both;
+    }
+    &3 {
+        animation: menuLoad 800ms 800ms;
+        animation-fill-mode: both;
+    }
+}
+
+
+
+.menu__card--load {
+    &1 {
+        animation: menuLoad 800ms ;
+        animation-fill-mode: both;
+    }
+    &2 {
+        animation: menuLoad 800ms 200ms;
+        animation-fill-mode: both;
+    }
+    &3 {
+        animation: menuLoad 800ms 400ms;
+        animation-fill-mode: both;
+    }
+    &4 {
+        animation: menuLoad 800ms ;
+        animation-fill-mode: both;
+    }
+}
+
+
+
+@keyframes menuLoad {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }

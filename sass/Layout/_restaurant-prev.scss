@@ -52,35 +52,33 @@
     }
 }
 
-.likeIcon {
+
+.likeIcon{
     position: relative;
     display: flex;
     flex-direction: row;
     font-size: 1.5rem;
-    & .far:hover{
-        opacity: 0;
+    transition: .5s;
+    z-index: 1;
+    &:hover .iconFilled{
+        opacity: 1;
     }
-
-}
-.iconEmpty {
-    opacity: 1;
-    transition: .3s;
-    &:hover {
+    &:hover .far {
         opacity: 0;
     }
 }
 .iconFilled {
     position: absolute;
     right: 0;
-    opacity: 0;
-    transition: .3s;
+    top: 0;
+    left: 0;
+    bottom: 0;
     margin: 0;
-    &:hover {
-        opacity: 1;
-        background: $gradient;
+    background: $gradient;
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color:transparent;
-
-    }
+    opacity: 0;
+    transition: all .3s;
+    z-index: -1;
 }

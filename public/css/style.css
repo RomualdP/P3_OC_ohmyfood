@@ -119,32 +119,30 @@ footer h2 {
   display: flex;
   flex-direction: row;
   font-size: 1.5rem;
+  transition: 0.5s;
+  z-index: 1;
 }
-.likeIcon .far:hover {
-  opacity: 0;
-}
-
-.iconEmpty {
+.likeIcon:hover .iconFilled {
   opacity: 1;
-  transition: 0.3s;
 }
-.iconEmpty:hover {
+.likeIcon:hover .far {
   opacity: 0;
 }
 
 .iconFilled {
   position: absolute;
   right: 0;
-  opacity: 0;
-  transition: 0.3s;
+  top: 0;
+  left: 0;
+  bottom: 0;
   margin: 0;
-}
-.iconFilled:hover {
-  opacity: 1;
   background: linear-gradient(170deg, #FF79DA 0%, #9356DC 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: -1;
 }
 
 .restorantImg {
@@ -250,6 +248,47 @@ footer h2 {
   transform: rotate(0deg);
 }
 
+/** Menu animations **/
+.menu__load1 {
+  animation: menuLoad 800ms;
+  animation-fill-mode: both;
+}
+.menu__load2 {
+  animation: menuLoad 800ms 400ms;
+  animation-fill-mode: both;
+}
+.menu__load3 {
+  animation: menuLoad 800ms 800ms;
+  animation-fill-mode: both;
+}
+
+.menu__card--load1 {
+  animation: menuLoad 800ms;
+  animation-fill-mode: both;
+}
+.menu__card--load2 {
+  animation: menuLoad 800ms 200ms;
+  animation-fill-mode: both;
+}
+.menu__card--load3 {
+  animation: menuLoad 800ms 400ms;
+  animation-fill-mode: both;
+}
+.menu__card--load4 {
+  animation: menuLoad 800ms;
+  animation-fill-mode: both;
+}
+
+@keyframes menuLoad {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 /* pages */
 .location {
   background-color: #EAEAEA;
