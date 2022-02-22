@@ -1,0 +1,86 @@
+.loading {
+    &Spinner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: -100;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeOut 3s;
+    }
+    &Bar {
+        position: relative;
+        background: $gradient;
+        height: 1rem;
+        width: 20rem;
+        &__Mask {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1rem;
+            width: 20rem;
+            background-color: white;
+            transform-origin: right;
+            animation: loadingbar 3000ms;
+        } 
+    }
+    &Message {
+        color: #ACACAC;
+        width: 20rem;
+        text-align: center;
+        animation: textSwipe 3s; 
+    }
+}
+
+@keyframes loadingbar {
+    0% {
+        transform: scaleX(1);
+    }
+    40%{
+        transform: scaleX(0.5);
+    } 
+    70%{
+        transform: scaleX(0.15);
+    }
+    100% {
+        transform: scaleX(0);
+    }    
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1 ;
+        z-index: 100;
+    }
+    100% {
+        opacity: 1;
+        z-index: 100;
+    }
+    
+}
+
+@keyframes textSwipe {
+    0% {
+        transform: translateX(-2000px);
+        opacity: 0;
+    }
+    30% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    80% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(+2000px);
+        opacity: 0;
+    }
+}
