@@ -62,7 +62,13 @@
     }
 
 }
-
+.iconEmpty {
+    opacity: 1;
+    transition: .3s;
+    &:hover {
+        opacity: 0;
+    }
+}
 .iconFilled {
     position: absolute;
     right: 0;

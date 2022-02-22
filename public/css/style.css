@@ -124,6 +124,14 @@ footer h2 {
   opacity: 0;
 }
 
+.iconEmpty {
+  opacity: 1;
+  transition: 0.3s;
+}
+.iconEmpty:hover {
+  opacity: 0;
+}
+
 .iconFilled {
   position: absolute;
   right: 0;
@@ -184,27 +192,62 @@ footer h2 {
   margin: 20px 0;
   border-radius: 20px;
   box-shadow: 0 0 5px #ACACAC;
+  overflow: hidden;
+  position: relative;
 }
 .menu__card h3, .menu__card p {
   margin: 0;
 }
 .menu__card--dish {
-  margin: 1rem;
+  padding: 1rem;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu__card--dish > p, .menu__card--dish h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__card--price {
   display: flex;
   align-items: flex-end;
-  margin-bottom: 1rem;
+  padding: 1rem;
 }
 .menu__card--check {
+  position: absolute;
+  right: -4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 4rem;
+  height: 100%;
   background-color: #99E2D0;
   color: white;
   font-size: 1.3rem;
   border-radius: 0 20px 20px 0;
+  transition: 0.5s;
+}
+.menu__card--check > * {
+  transform: rotate(-270deg);
+  transition: 0.5s 0.2s;
+}
+
+.menu__cardDescription {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  transition: width 0.5s;
+}
+.menu__cardDescription:hover {
+  width: calc(100% - 64px);
+}
+.menu__cardDescription:hover + .menu__card--check {
+  transform: translateX(-64px);
+}
+.menu__cardDescription:hover + .menu__card--check > * {
+  transform: rotate(0deg);
 }
 
 /* pages */
