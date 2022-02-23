@@ -11,12 +11,14 @@
 </head>
 
 <body>
-    <div class="loadingSpinner">
-        <h2 class="loadingMessage">Nos experts vous recherchent les meilleurs restaurants</h2>
-        <div class="loadingBar">
-            <div class="loadingBar__Mask"></div>
+    <!--
+        <div class="loadingSpinner">
+            <h2 class="loadingMessage">Nos experts vous recherchent les meilleurs restaurants</h2>
+            <div class="loadingBar">
+                <div class="loadingBar__Mask"></div>
+            </div>
         </div>
-    </div>
+    -->
     <header>
         <h1>ohmyfood</h1>
     </header>
@@ -31,18 +33,18 @@
     
     <div class="explanation">
         <h2>Fonctionnement</h2>
-        <div>
-            <div class="explanationSteps">
+        <div class="explanationSteps">
+            <div class="explanationSteps__card">
                 <span class="explanationSteps__number">1</span>
                 <i class="fas fa-mobile-alt"></i>
                 <p>Choisissez un restaurant</p>
             </div>
-            <div class="explanationSteps">
+            <div class="explanationSteps__card">
                 <span class="explanationSteps__number">2</span>
                 <i class="fas fa-list-ul"></i>
                 <p>Composez votre menu</p>
             </div>
-            <div class="explanationSteps">
+            <div class="explanationSteps__card">
                 <span class="explanationSteps__number">3</span>
                 <i class="fas fa-store"></i>
                 <p>Dégustez au restaurant</p>
@@ -80,7 +82,10 @@
                         <h3>La note enchantée</h3>
                         <p>Charonne</p>
                     </div>
-                    <span><i class="far fa-heart"></i></span>
+                    <span class="likeIcon">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-heart iconFilled"></i>
+                    </span>
                 </div>
                 <p class="restorant-previewCard__newTag">Nouveau</p>
             </a>
@@ -95,7 +100,10 @@
                         <h3>À la française</h3>
                         <p>Cité Rouge</p>
                     </div>
-                    <span><i class="far fa-heart"></i></span>
+                    <span class="likeIcon">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-heart iconFilled"></i>
+                    </span>
                 </div>
             </a>
         </div>
@@ -109,7 +117,10 @@
                         <h3>Le délice des sens</h3>
                         <p>Folie-Méricourt</p>
                     </div>
-                    <span><i class="far fa-heart"></i></span>
+                    <span class="likeIcon">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-heart iconFilled"></i>
+                    </span>
                 </div>
             </a>
         </div>

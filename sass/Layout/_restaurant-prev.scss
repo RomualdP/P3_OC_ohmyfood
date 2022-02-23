@@ -1,21 +1,43 @@
 .restorant-preview{
     background-color: #F6F6F6 ;
     padding: 20px;
+    & h2 {
+        width: 100%;
+    }
+    @media screen and (min-width :600px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
     &Card {
         display: flex;
         flex-direction: column;
         border-radius: 1rem;
         background-color: white;
         box-shadow:  0 5px 10px #ACACAC;
-        margin: 1rem;
+        margin: 1rem 0;
         position: relative;
-
+        @media screen and (min-width :600px) {
+            width: calc(50% - 16px);
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        @media screen and (min-width :1200px) {
+            width: calc(25% - 16px);
+            margin-right: 1rem;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
         &__description {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            margin: 0 1rem;
+            margin: .5rem 1rem;
             
             & h3 {
                 margin: 0 ;
