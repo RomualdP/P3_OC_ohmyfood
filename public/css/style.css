@@ -31,7 +31,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 20px #000;
   height: 4rem;
 }
 
@@ -99,6 +98,11 @@ footer h2 {
   box-shadow: 0 5px 10px #ACACAC;
   margin: 1rem 0;
   position: relative;
+  transition: all 300ms;
+}
+.restorant-previewCard:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 20px #ACACAC;
 }
 @media screen and (min-width: 600px) {
   .restorant-previewCard {
@@ -215,6 +219,7 @@ footer h2 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
   }
 }
 .menu h1 {
@@ -405,6 +410,9 @@ footer h2 {
   box-shadow: 0 5px 10px #ACACAC;
   margin: 2rem 0 2rem 10px;
 }
+.explanationSteps__card:hover {
+  background-color: #f2eafb;
+}
 @media screen and (min-width: 1200px) {
   .explanationSteps__card {
     width: calc(33%);
@@ -425,9 +433,6 @@ footer h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.explanationSteps:hover {
-  background-color: #f2eafb;
 }
 .explanationSteps i {
   position: relative;
@@ -530,7 +535,7 @@ footer h2 {
   padding: 1rem;
   border-radius: 2rem;
   border: 0;
-  margin: auto;
+  margin: 2rem;
   box-shadow: 0 5px 10px #ACACAC;
   font-family: "Roboto", sans-serif;
   transition: all 300ms;
@@ -545,11 +550,6 @@ footer h2 {
   display: flex;
   justify-content: center;
   width: 100%;
-}
-@media screen and (min-width: 600px) {
-  .btnWrap {
-    margin: 2rem 0;
-  }
 }
 
 /* Themes */

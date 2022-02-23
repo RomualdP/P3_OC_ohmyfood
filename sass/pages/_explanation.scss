@@ -17,6 +17,9 @@
             padding: 10px;
             box-shadow:  0 5px 10px #ACACAC;
             margin: 2rem 0 2rem 10px;
+            &:hover {
+                background-color: lighten($color-primary, 35%);
+            }
             @media screen and (min-width: 1200px) {
                 width: calc(33%);
                 margin-right: 1rem;
@@ -37,9 +40,7 @@
             align-items: center;
             justify-content: center;
         }
-        &:hover {
-            background-color: lighten($color-primary, 35%);
-        }
+        
         & i {
             position: relative;
             left: -20px;

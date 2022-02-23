@@ -19,6 +19,11 @@
         box-shadow:  0 5px 10px #ACACAC;
         margin: 1rem 0;
         position: relative;
+        transition: all 300ms;
+        &:hover {
+            transform: scale(1.02);
+            box-shadow:  0 5px 20px #ACACAC;
+        }
         @media screen and (min-width :600px) {
             width: calc(50% - 16px);
             &:last-child {
