@@ -23,6 +23,9 @@
             margin: 2rem 0 2rem 10px;
             &:hover {
                 background-color: lighten($color-primary, 35%);
+                &>i {
+                    color: $color-primary;
+                }
             }
             @media screen and (min-width: 1200px) {
                 width: calc(33%);

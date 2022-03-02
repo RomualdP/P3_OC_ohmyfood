@@ -433,9 +433,12 @@ footer h2 {
 .explanationSteps__card:hover {
   background-color: #f2eafb;
 }
+.explanationSteps__card:hover > i {
+  color: #9356DC;
+}
 @media screen and (min-width: 1200px) {
   .explanationSteps__card {
-    width: calc(33%);
+    width: 33%;
     margin: 1rem;
   }
   .explanationSteps__card:last-child {
