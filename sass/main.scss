@@ -10,12 +10,13 @@
 /* Layout */
 @import "./Layout/header";
 @import "./Layout/footer";
-@import "./Layout/restaurant-prev";
+
 @import "./Layout/menu";
 
 /* pages */
 @import "./pages/intro";
 @import "./pages/explanation";
+@import "./pages/restaurant-prev";
 @import "./pages/loader";
 
 /* Components*/

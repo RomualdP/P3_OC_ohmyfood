@@ -80,126 +80,6 @@ footer h2 {
   }
 }
 
-.restorant-preview {
-  background-color: #F6F6F6;
-  padding: 20px;
-}
-@media screen and (min-width: 1200px) {
-  .restorant-preview h2 {
-    margin: 10px 0;
-  }
-}
-.restorant-preview h2 {
-  width: 100%;
-}
-@media screen and (min-width: 600px) {
-  .restorant-preview {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-}
-.restorant-previewCard {
-  display: flex;
-  flex-direction: column;
-  border-radius: 1rem;
-  background-color: white;
-  box-shadow: 0 5px 10px #ACACAC;
-  margin: 1rem 0;
-  position: relative;
-  transition: all 300ms;
-}
-.restorant-previewCard:hover {
-  transform: scale(1.02);
-  box-shadow: 0 5px 20px #ACACAC;
-}
-@media screen and (min-width: 600px) {
-  .restorant-previewCard {
-    width: calc(50% - 16px);
-  }
-  .restorant-previewCard:last-child {
-    margin-right: 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .restorant-previewCard {
-    width: calc(25% - 16px);
-    margin-right: 1rem;
-  }
-  .restorant-previewCard:last-child {
-    margin-right: 0;
-  }
-}
-.restorant-previewCard__description {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0.5rem 1rem;
-}
-.restorant-previewCard__description h3 {
-  margin: 0;
-}
-.restorant-previewCard__description p {
-  margin: 0;
-}
-.restorant-previewCard__imgWrap {
-  width: 100%;
-  height: 11rem;
-  display: flex;
-  align-items: baseline;
-  overflow: hidden;
-}
-.restorant-previewCard img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 1rem 1rem 0 0;
-}
-.restorant-previewCard__newTag {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background-color: #99E2D0;
-  font-weight: 700;
-  color: #2c9c81;
-  padding: 5px 10px;
-  margin: 0;
-  box-shadow: 0 0 5px #666;
-}
-
-.likeIcon {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  font-size: 1.5rem;
-  transition: 0.5s;
-  z-index: 1;
-}
-.likeIcon:hover .iconFilled {
-  opacity: 1;
-}
-.likeIcon:hover .far {
-  opacity: 0;
-}
-
-.iconFilled {
-  position: absolute;
-  right: 0;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  margin: 0;
-  background: linear-gradient(170deg, #FF79DA 0%, #9356DC 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0;
-  transition: all 0.3s;
-  z-index: -1;
-}
-
 .restorantImg {
   height: 30vh;
   width: 100%;
@@ -467,6 +347,126 @@ footer h2 {
   font-weight: 700;
   position: relative;
   left: -20px;
+}
+
+.restorant-preview {
+  background-color: #F6F6F6;
+  padding: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .restorant-preview h2 {
+    margin: 10px 0;
+  }
+}
+.restorant-preview h2 {
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  .restorant-preview {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.restorant-previewCard {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 5px 10px #ACACAC;
+  margin: 1rem 0;
+  position: relative;
+  transition: all 300ms;
+}
+.restorant-previewCard:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 20px #ACACAC;
+}
+@media screen and (min-width: 600px) {
+  .restorant-previewCard {
+    width: calc(50% - 16px);
+  }
+  .restorant-previewCard:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .restorant-previewCard {
+    width: calc(25% - 16px);
+    margin-right: 1rem;
+  }
+  .restorant-previewCard:last-child {
+    margin-right: 0;
+  }
+}
+.restorant-previewCard__description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 1rem;
+}
+.restorant-previewCard__description h3 {
+  margin: 0;
+}
+.restorant-previewCard__description p {
+  margin: 0;
+}
+.restorant-previewCard__imgWrap {
+  width: 100%;
+  height: 11rem;
+  display: flex;
+  align-items: baseline;
+  overflow: hidden;
+}
+.restorant-previewCard img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+.restorant-previewCard__newTag {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #99E2D0;
+  font-weight: 700;
+  color: #2c9c81;
+  padding: 5px 10px;
+  margin: 0;
+  box-shadow: 0 0 5px #666;
+}
+
+.likeIcon {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  transition: 0.5s;
+  z-index: 1;
+}
+.likeIcon:hover .iconFilled {
+  opacity: 1;
+}
+.likeIcon:hover .far {
+  opacity: 0;
+}
+
+.iconFilled {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  background: linear-gradient(170deg, #FF79DA 0%, #9356DC 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: -1;
 }
 
 .loadingSpinner {
