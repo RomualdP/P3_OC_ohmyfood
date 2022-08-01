@@ -31,11 +31,14 @@ git clone https://github.com/RomualdP/RomualdPiquet_3_18022022.git
 
 ### 2. Lancer
 
-2 options :
+3 options :
  
 Ouvrir dans VS Code avec l'extension "Go live"
 
 Ouvrir le fichier hmtl directement dans le dossier
+
+Aller directement sur la version live :
+https://romualdp.github.io/RomualdPiquet_3_18022022/
 
 ## Notes 
 
